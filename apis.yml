@@ -35,6 +35,8 @@ apis:
       - Reverse Geocoding
       - Search
     properties:
+      - url: openapi/microsoft-azure-maps-openapi.yml
+        type: OpenAPI
       - type: Documentation
         url: https://learn.microsoft.com/en-us/rest/api/maps/search
       - type: Authentication
