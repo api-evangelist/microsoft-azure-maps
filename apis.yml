@@ -41,7 +41,7 @@ apis:
         url: https://learn.microsoft.com/en-us/rest/api/maps/search
       - type: Authentication
         url: https://learn.microsoft.com/en-us/azure/azure-maps/azure-maps-authentication
-      - type: Getting Started
+      - type: GettingStarted
         url: https://learn.microsoft.com/en-us/azure/azure-maps/how-to-use-search-service
   - name: Azure Maps Route API
     description: >-
@@ -60,7 +60,7 @@ apis:
     properties:
       - type: Documentation
         url: https://learn.microsoft.com/en-us/rest/api/maps/route
-      - type: Getting Started
+      - type: GettingStarted
         url: https://learn.microsoft.com/en-us/azure/azure-maps/how-to-use-best-practices-for-routing
   - name: Azure Maps Render API
     description: >-
@@ -200,14 +200,14 @@ apis:
     properties:
       - type: Documentation
         url: https://learn.microsoft.com/en-us/rest/api/maps/creator
-      - type: Getting Started
+      - type: GettingStarted
         url: https://learn.microsoft.com/en-us/azure/azure-maps/creator-indoor-maps
 common:
   - type: Portal
     url: https://portal.azure.com
   - type: Documentation
     url: https://learn.microsoft.com/en-us/azure/azure-maps/
-  - type: Getting Started
+  - type: GettingStarted
     url: https://learn.microsoft.com/en-us/azure/azure-maps/quick-demo-map-app
   - type: Authentication
     url: https://learn.microsoft.com/en-us/azure/azure-maps/azure-maps-authentication
@@ -215,25 +215,25 @@ common:
     url: https://learn.microsoft.com/en-us/azure/azure-maps/about-azure-maps
   - type: Pricing
     url: https://azure.microsoft.com/en-us/pricing/details/azure-maps/
-  - type: Status
+  - type: StatusPage
     url: https://status.azure.com/
   - type: Support
     url: https://azure.microsoft.com/en-us/support/options/
   - type: Blog
     url: https://azure.microsoft.com/en-us/blog/tag/azure-maps/
-  - type: Change Log
+  - type: ChangeLog
     url: https://learn.microsoft.com/en-us/azure/azure-maps/release-notes-map-control
-  - type: Terms of Service
+  - type: TermsOfService
     url: https://azure.microsoft.com/en-us/support/legal/
-  - type: Privacy Policy
+  - type: PrivacyPolicy
     url: https://privacy.microsoft.com/en-us/privacystatement
-  - type: GitHub Organization
+  - type: GitHubOrganization
     url: https://github.com/Azure
   - type: Website
     url: https://azure.microsoft.com/en-us/products/azure-maps
   - type: Login
     url: https://portal.azure.com
-  - type: Sign Up
+  - type: SignUp
     url: https://azure.microsoft.com/en-us/free
 maintainers:
   - FN: Kin Lane
