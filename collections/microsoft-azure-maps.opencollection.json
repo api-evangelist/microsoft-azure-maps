@@ -1,0 +1,146 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Azure Maps Search REST API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "subscription-key",
+      "value": "{{subscription-key}}",
+      "placement": "query"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Geocoding",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Maps Address search",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://atlas.microsoft.com/search/address/:format",
+            "params": [
+              {
+                "name": "format",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "api-version",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "query",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Geocodes a free-form address."
+        },
+        {
+          "info": {
+            "name": "Maps Reverse geocode",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://atlas.microsoft.com/search/address/reverse/:format",
+            "params": [
+              {
+                "name": "format",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "api-version",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "query",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Reverse geocodes coordinates to address."
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Search",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Maps POI search",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://atlas.microsoft.com/search/poi/:format",
+            "params": [
+              {
+                "name": "format",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "api-version",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "query",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Searches points of interest by category."
+        },
+        {
+          "info": {
+            "name": "Maps Fuzzy search",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://atlas.microsoft.com/search/fuzzy/:format",
+            "params": [
+              {
+                "name": "format",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "api-version",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "query",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Fuzzy search supporting POIs, addresses, and geographies."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
