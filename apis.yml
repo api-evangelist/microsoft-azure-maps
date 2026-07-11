@@ -191,6 +191,8 @@ apis:
       - type: GettingStarted
         url: https://learn.microsoft.com/en-us/azure/azure-maps/creator-indoor-maps
 common:
+  - type: OAuthScopes
+    url: scopes/microsoft-azure-maps-scopes.yml
   - type: Portal
     url: https://portal.azure.com
   - type: Documentation
