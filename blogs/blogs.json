@@ -2,11 +2,13 @@
   "repo": "microsoft-azure-maps",
   "feeds": [
     {
-      "source": "https://azure.microsoft.com/en-us/blog/tag/azure-maps/",
+      "source": "https://azure.microsoft.com/en-us/support/options/",
+      "feed_url": "https://azure.microsoft.com/en-us/support/options/",
+      "title": "",
       "saved": 0,
-      "error": "timeout fetching listing page (3x)"
+      "method": "none"
     }
   ],
   "post_count": 20,
-  "fetched": "2026-06-27T12:54:04Z"
+  "fetched": "2026-07-11T11:50:51Z"
 }
