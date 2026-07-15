@@ -191,6 +191,8 @@ apis:
       - type: GettingStarted
         url: https://learn.microsoft.com/en-us/azure/azure-maps/creator-indoor-maps
 common:
+  - type: AgenticAccess
+    url: agentic-access/microsoft-azure-maps-agentic-access.yml
   - type: DomainSecurity
     url: security/microsoft-azure-maps-domain-security.yml
   - type: Authentication
