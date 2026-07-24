@@ -1,0 +1,97 @@
+openapi: 3.1.0
+info:
+  title: Azure Maps Search REST Geocoding API
+  description: Azure Maps Search REST API provides geocoding, reverse geocoding, point of interest search, address search, and fuzzy search using location services.
+  version: '1.0'
+servers:
+- url: https://atlas.microsoft.com
+security:
+- subscriptionKey: []
+- azure_auth:
+  - user_impersonation
+tags:
+- name: Geocoding
+paths:
+  /search/address/{format}:
+    parameters:
+    - name: format
+      in: path
+      required: true
+      schema:
+        type: string
+        enum:
+        - json
+        - xml
+    get:
+      operationId: searchAddress
+      summary: Maps Address search
+      description: Geocodes a free-form address.
+      tags:
+      - Geocoding
+      parameters:
+      - name: api-version
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: query
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Search results
+          content:
+            application/json:
+              schema:
+                type: object
+  /search/address/reverse/{format}:
+    parameters:
+    - name: format
+      in: path
+      required: true
+      schema:
+        type: string
+    get:
+      operationId: reverseGeocode
+      summary: Maps Reverse geocode
+      description: Reverse geocodes coordinates to address.
+      tags:
+      - Geocoding
+      parameters:
+      - name: api-version
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: query
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Reverse geocode results
+          content:
+            application/json:
+              schema:
+                type: object
+components:
+  securitySchemes:
+    subscriptionKey:
+      type: apiKey
+      in: query
+      name: subscription-key
+    azure_auth:
+      type: oauth2
+      flows:
+        implicit:
+          authorizationUrl: https://login.microsoftonline.com/common/oauth2/authorize
+          scopes:
+            user_impersonation: Impersonate user
+externalDocs:
+  description: Azure Maps Search REST API Documentation
+  url: https://learn.microsoft.com/en-us/rest/api/maps/search
+x-generated-from: https://learn.microsoft.com/en-us/rest/api/maps/search
+x-generated-by: claude-crawl-2026-05-08
