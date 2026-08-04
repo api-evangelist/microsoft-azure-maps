@@ -1,0 +1,16 @@
+{
+  "provider": "microsoft-azure-maps",
+  "sources": [
+    "microsoft-azure-maps-geocoding-api-openapi.yml",
+    "microsoft-azure-maps-search-api-openapi.yml"
+  ],
+  "outputs": [
+    "microsoft-azure-maps-geocoding-api-openapi.yml",
+    "microsoft-azure-maps-search-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
