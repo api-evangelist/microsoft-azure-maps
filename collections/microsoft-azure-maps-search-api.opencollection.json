@@ -1,0 +1,82 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Azure Maps REST Geocoding Search API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "subscription-key",
+      "value": "{{subscription-key}}",
+      "placement": "query"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Search",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Maps POI search",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://atlas.microsoft.com/search/poi/:format",
+            "params": [
+              {
+                "name": "format",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "api-version",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "query",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Searches points of interest by category."
+        },
+        {
+          "info": {
+            "name": "Maps Fuzzy search",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://atlas.microsoft.com/search/fuzzy/:format",
+            "params": [
+              {
+                "name": "format",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "api-version",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "query",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Fuzzy search supporting POIs, addresses, and geographies."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
