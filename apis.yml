@@ -112,6 +112,11 @@ apis:
   tags:
   - DST
   - IANA
+  - Timezone
+  - UTC Offset
+  tags_raw:
+  - DST
+  - IANA
   - Time Zone
   - UTC Offset
   properties:
