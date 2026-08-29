@@ -3,6 +3,18 @@ description: >-
   Azure Maps provides geospatial APIs for maps, routing, geocoding, traffic, weather, and spatial analysis. The service
   offers a comprehensive suite of REST APIs to embed location intelligence into applications spanning mobile, web, and
   IoT scenarios across multiple transport modes.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: true
+  label: Hosted service · you call their endpoint
+  confidence: high
+  source:
+  - openapi
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: self-serve
