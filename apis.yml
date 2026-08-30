@@ -124,7 +124,7 @@ apis:
   tags:
   - DST
   - IANA
-  - Timezone
+  - Time Zone
   - UTC Offset
   tags_raw:
   - DST
