@@ -1,4 +1,4 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
   title: Azure Maps REST Geocoding Search API
   description: Azure Maps Search REST API provides geocoding, reverse geocoding, point of interest search, address search, and fuzzy search using location services.
