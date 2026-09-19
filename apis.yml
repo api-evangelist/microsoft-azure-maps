@@ -189,6 +189,11 @@ apis:
   humanURL: https://learn.microsoft.com/en-us/rest/api/maps/creator
   baseURL: https://atlas.microsoft.com
   tags:
+  - Creators
+  - Indoor Maps
+  - Tileset
+  - Wayfinding
+  tags_raw:
   - Creator
   - Indoor Maps
   - Tileset
