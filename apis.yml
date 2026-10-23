@@ -236,6 +236,8 @@ apis:
   - type: GettingStarted
     url: https://learn.microsoft.com/en-us/azure/azure-maps/how-to-use-search-service
 common:
+  - type: PostmanWorkspace
+    url: https://www.postman.com/kinlaneapi/azure-maps/overview
   - type: Plans
     url: plans/microsoft-azure-maps-plans-pricing.yml
   - type: RateLimits
