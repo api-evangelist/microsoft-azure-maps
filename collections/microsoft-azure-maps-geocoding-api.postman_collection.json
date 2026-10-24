@@ -1,257 +1,289 @@
 {
+  "info": {
+    "_postman_id": "9cfbd6db-3384-4b63-9849-f4547b867deb",
+    "name": "Azure Maps Search REST Geocoding API",
+    "description": "Azure Maps Search REST API provides geocoding, reverse geocoding, point of interest search, address search, and fuzzy search using location services.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-10-21T20:20:15.000Z",
+    "updatedAt": "2026-10-21T20:20:15.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-9cfbd6db-3384-4b63-9849-f4547b867deb"
+  },
   "item": [
     {
-      "id": "52e18cb4-ccd9-48d5-a407-ba6cb7a850f3",
-      "name": "Geocoding",
-      "description": {
-        "content": "",
-        "type": "text/plain"
-      },
+      "name": "search",
       "item": [
         {
-          "id": "d1c002ac-0fe1-4599-a502-d0ad401fda77",
-          "name": "Maps Address search",
-          "request": {
-            "name": "Maps Address search",
-            "description": {
-              "content": "Geocodes a free-form address.",
-              "type": "text/plain"
-            },
-            "url": {
-              "path": [
-                "search",
-                "address",
-                ":format"
-              ],
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "query": [
-                {
-                  "disabled": false,
-                  "key": "api-version",
-                  "value": "<string>",
-                  "description": "(Required) "
-                },
-                {
-                  "disabled": false,
-                  "key": "query",
-                  "value": "<string>",
-                  "description": "(Required) "
-                }
-              ],
-              "variable": [
-                {
-                  "disabled": false,
-                  "type": "any",
-                  "value": "<string>",
-                  "key": "format",
-                  "description": "(Required) "
-                }
-              ]
-            },
-            "header": [
-              {
-                "key": "Accept",
-                "value": "application/json"
-              }
-            ],
-            "method": "GET",
-            "auth": null
-          },
-          "response": [
+          "name": "address",
+          "item": [
             {
-              "id": "150d38ca-414d-4070-8ba5-55313141756a",
-              "name": "Search results",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "search",
-                    "address",
-                    ":format"
-                  ],
-                  "host": [
-                    "{{baseUrl}}"
-                  ],
-                  "query": [
-                    {
-                      "key": "api-version",
-                      "value": "<string>"
-                    },
-                    {
-                      "key": "query",
-                      "value": "<string>"
-                    },
-                    {
-                      "key": "subscription-key",
-                      "value": "<API Key>"
-                    }
-                  ],
-                  "variable": [
-                    {
-                      "disabled": false,
-                      "type": "any",
-                      "value": "<string>",
-                      "key": "format",
-                      "description": "(Required) "
-                    }
-                  ]
-                },
-                "header": [
-                  {
-                    "key": "Accept",
-                    "value": "application/json"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "OK",
-              "code": 200,
-              "header": [
+              "name": "{format}",
+              "item": [
                 {
-                  "key": "Content-Type",
-                  "value": "application/json"
+                  "name": "Maps Address search",
+                  "id": "a659050f-801c-4aa8-87cc-d7f496d3cea2",
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  },
+                  "request": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "application/json"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/search/address/:format?api-version=<string>&query=<string>",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "search",
+                        "address",
+                        ":format"
+                      ],
+                      "query": [
+                        {
+                          "description": "(Required) ",
+                          "key": "api-version",
+                          "value": "<string>"
+                        },
+                        {
+                          "description": "(Required) ",
+                          "key": "query",
+                          "value": "<string>"
+                        }
+                      ],
+                      "variable": [
+                        {
+                          "id": "e4aac507-0070-44e5-93d3-4b334cc11a0f",
+                          "key": "format",
+                          "value": "xml",
+                          "description": "(Required) "
+                        }
+                      ]
+                    },
+                    "description": "Geocodes a free-form address."
+                  },
+                  "response": [
+                    {
+                      "id": "4bb8b5ce-6c67-4e54-b39c-10fb5efc28f6",
+                      "name": "Search results",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "application/json"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/search/address/:format?api-version=<string>&query=<string>&subscription-key=<API Key>",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "search",
+                            "address",
+                            ":format"
+                          ],
+                          "query": [
+                            {
+                              "description": "(Required) ",
+                              "key": "api-version",
+                              "value": "<string>"
+                            },
+                            {
+                              "description": "(Required) ",
+                              "key": "query",
+                              "value": "<string>"
+                            },
+                            {
+                              "description": "Added as a part of security scheme: apikey",
+                              "key": "subscription-key",
+                              "value": "<API Key>"
+                            }
+                          ],
+                          "variable": [
+                            {
+                              "key": "format"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        }
+                      ],
+                      "cookie": [],
+                      "responseTime": null,
+                      "body": "{}",
+                      "createdAt": "2026-10-21T20:20:15.000Z",
+                      "updatedAt": "2026-10-21T20:20:15.000Z",
+                      "uid": "35240-4bb8b5ce-6c67-4e54-b39c-10fb5efc28f6"
+                    }
+                  ],
+                  "createdAt": "2026-10-21T20:20:15.000Z",
+                  "updatedAt": "2026-10-21T20:20:15.000Z",
+                  "uid": "35240-a659050f-801c-4aa8-87cc-d7f496d3cea2"
                 }
               ],
-              "body": "{}",
-              "cookie": [],
-              "_postman_previewlanguage": "json"
+              "id": "0462dff0-7f14-4ad1-a166-8b263541b7f0",
+              "createdAt": "2026-10-21T20:20:15.000Z",
+              "updatedAt": "2026-10-21T20:20:15.000Z",
+              "uid": "35240-0462dff0-7f14-4ad1-a166-8b263541b7f0"
+            },
+            {
+              "name": "reverse",
+              "item": [
+                {
+                  "name": "{format}",
+                  "item": [
+                    {
+                      "name": "Maps Reverse geocode",
+                      "id": "0d8e5227-8bd6-4d2a-acf5-c79fae2557da",
+                      "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                      },
+                      "request": {
+                        "method": "GET",
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "application/json"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/search/address/reverse/:format?api-version=<string>&query=<string>",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "search",
+                            "address",
+                            "reverse",
+                            ":format"
+                          ],
+                          "query": [
+                            {
+                              "description": "(Required) ",
+                              "key": "api-version",
+                              "value": "<string>"
+                            },
+                            {
+                              "description": "(Required) ",
+                              "key": "query",
+                              "value": "<string>"
+                            }
+                          ],
+                          "variable": [
+                            {
+                              "id": "452ed9e2-1038-48d7-b17b-f268a4d4592d",
+                              "key": "format",
+                              "value": "<string>",
+                              "description": "(Required) "
+                            }
+                          ]
+                        },
+                        "description": "Reverse geocodes coordinates to address."
+                      },
+                      "response": [
+                        {
+                          "id": "2acc7b0a-38fd-4355-81ef-7f7e485ec605",
+                          "name": "Reverse geocode results",
+                          "originalRequest": {
+                            "method": "GET",
+                            "header": [
+                              {
+                                "key": "Accept",
+                                "value": "application/json"
+                              }
+                            ],
+                            "url": {
+                              "raw": "{{baseUrl}}/search/address/reverse/:format?api-version=<string>&query=<string>&subscription-key=<API Key>",
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "path": [
+                                "search",
+                                "address",
+                                "reverse",
+                                ":format"
+                              ],
+                              "query": [
+                                {
+                                  "description": "(Required) ",
+                                  "key": "api-version",
+                                  "value": "<string>"
+                                },
+                                {
+                                  "description": "(Required) ",
+                                  "key": "query",
+                                  "value": "<string>"
+                                },
+                                {
+                                  "description": "Added as a part of security scheme: apikey",
+                                  "key": "subscription-key",
+                                  "value": "<API Key>"
+                                }
+                              ],
+                              "variable": [
+                                {
+                                  "key": "format"
+                                }
+                              ]
+                            }
+                          },
+                          "status": "OK",
+                          "code": 200,
+                          "_postman_previewlanguage": "json",
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "cookie": [],
+                          "responseTime": null,
+                          "body": "{}",
+                          "createdAt": "2026-10-21T20:20:15.000Z",
+                          "updatedAt": "2026-10-21T20:20:15.000Z",
+                          "uid": "35240-2acc7b0a-38fd-4355-81ef-7f7e485ec605"
+                        }
+                      ],
+                      "createdAt": "2026-10-21T20:20:15.000Z",
+                      "updatedAt": "2026-10-21T20:20:15.000Z",
+                      "uid": "35240-0d8e5227-8bd6-4d2a-acf5-c79fae2557da"
+                    }
+                  ],
+                  "id": "08a466a4-3dfe-4c14-b4a4-c818dce2e297",
+                  "createdAt": "2026-10-21T20:20:15.000Z",
+                  "updatedAt": "2026-10-21T20:20:15.000Z",
+                  "uid": "35240-08a466a4-3dfe-4c14-b4a4-c818dce2e297"
+                }
+              ],
+              "id": "e3dc7439-34d4-4b3b-b673-f444d687de07",
+              "createdAt": "2026-10-21T20:20:15.000Z",
+              "updatedAt": "2026-10-21T20:20:15.000Z",
+              "uid": "35240-e3dc7439-34d4-4b3b-b673-f444d687de07"
             }
           ],
-          "event": [],
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          }
-        },
-        {
-          "id": "6c93b91e-543e-4205-8433-ef99025a7e90",
-          "name": "Maps Reverse geocode",
-          "request": {
-            "name": "Maps Reverse geocode",
-            "description": {
-              "content": "Reverse geocodes coordinates to address.",
-              "type": "text/plain"
-            },
-            "url": {
-              "path": [
-                "search",
-                "address",
-                "reverse",
-                ":format"
-              ],
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "query": [
-                {
-                  "disabled": false,
-                  "key": "api-version",
-                  "value": "<string>",
-                  "description": "(Required) "
-                },
-                {
-                  "disabled": false,
-                  "key": "query",
-                  "value": "<string>",
-                  "description": "(Required) "
-                }
-              ],
-              "variable": [
-                {
-                  "disabled": false,
-                  "type": "any",
-                  "value": "<string>",
-                  "key": "format",
-                  "description": "(Required) "
-                }
-              ]
-            },
-            "header": [
-              {
-                "key": "Accept",
-                "value": "application/json"
-              }
-            ],
-            "method": "GET",
-            "auth": null
-          },
-          "response": [
-            {
-              "id": "1ff63ff8-7ec4-4df7-8235-6f14820f7792",
-              "name": "Reverse geocode results",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "search",
-                    "address",
-                    "reverse",
-                    ":format"
-                  ],
-                  "host": [
-                    "{{baseUrl}}"
-                  ],
-                  "query": [
-                    {
-                      "key": "api-version",
-                      "value": "<string>"
-                    },
-                    {
-                      "key": "query",
-                      "value": "<string>"
-                    },
-                    {
-                      "key": "subscription-key",
-                      "value": "<API Key>"
-                    }
-                  ],
-                  "variable": [
-                    {
-                      "disabled": false,
-                      "type": "any",
-                      "value": "<string>",
-                      "key": "format",
-                      "description": "(Required) "
-                    }
-                  ]
-                },
-                "header": [
-                  {
-                    "key": "Accept",
-                    "value": "application/json"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "OK",
-              "code": 200,
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "application/json"
-                }
-              ],
-              "body": "{}",
-              "cookie": [],
-              "_postman_previewlanguage": "json"
-            }
-          ],
-          "event": [],
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          }
+          "id": "ece8d9f6-58ff-4dbc-8647-431fa63baf23",
+          "createdAt": "2026-10-21T20:20:15.000Z",
+          "updatedAt": "2026-10-21T20:20:15.000Z",
+          "uid": "35240-ece8d9f6-58ff-4dbc-8647-431fa63baf23"
         }
       ],
-      "event": []
-    }
-  ],
-  "event": [],
-  "variable": [
-    {
-      "type": "string",
-      "value": "https://atlas.microsoft.com",
-      "key": "baseUrl"
+      "id": "2e0f178c-745b-4410-b6e3-f785a1a8f13c",
+      "createdAt": "2026-10-21T20:20:15.000Z",
+      "updatedAt": "2026-10-21T20:20:15.000Z",
+      "uid": "35240-2e0f178c-745b-4410-b6e3-f785a1a8f13c"
     }
   ],
   "auth": {
@@ -259,25 +291,25 @@
     "apikey": [
       {
         "key": "key",
-        "value": "subscription-key"
+        "value": "subscription-key",
+        "type": "string"
       },
       {
         "key": "value",
-        "value": "{{apiKey}}"
+        "value": "{{apiKey}}",
+        "type": "string"
       },
       {
         "key": "in",
-        "value": "query"
+        "value": "query",
+        "type": "string"
       }
     ]
   },
-  "info": {
-    "_postman_id": "11e7bebe-c84f-4460-b63d-dc2b5315c756",
-    "name": "Azure Maps Search REST Geocoding API",
-    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-    "description": {
-      "content": "Azure Maps Search REST API provides geocoding, reverse geocoding, point of interest search, address search, and fuzzy search using location services.",
-      "type": "text/plain"
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://atlas.microsoft.com"
     }
-  }
+  ]
 }

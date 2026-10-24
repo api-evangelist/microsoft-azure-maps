@@ -1,9 +1,11 @@
 {
   "provider": "microsoft-azure-maps",
   "sources": [
+    "_original/microsoft-azure-maps-openapi.json",
     "_ae-authored/microsoft-azure-maps-openapi.yml"
   ],
   "outputs": [
+    "microsoft-azure-maps-webapps-api-openapi.yml",
     "microsoft-azure-maps-geocoding-api-openapi.yml",
     "microsoft-azure-maps-search-api-openapi.yml"
   ],
@@ -11,9 +13,11 @@
   "errors": [],
   "warnings": [],
   "notes": [
-    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "microsoft-azure-maps-openapi.json: upgraded swagger 2.0 -> OpenAPI 3.2.0",
+    "microsoft-azure-maps-openapi.json: declared missing tag: WebApps",
     "microsoft-azure-maps-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
-    "apis.yml register: already-registered"
+    "apis.yml register: written (+1 apis, 12 total)"
   ],
   "skipped": [
     "microsoft-azure-maps-geocoding-api-openapi.yml: previously refined output, superseded by openapi/_original/",

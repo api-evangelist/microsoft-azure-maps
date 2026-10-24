@@ -1,255 +1,287 @@
 {
+  "info": {
+    "_postman_id": "15bf0157-4577-40e6-a788-85a1a6d8da44",
+    "name": "Azure Maps REST Search API",
+    "description": "Azure Maps Search REST API provides geocoding, reverse geocoding, point of interest search, address search, and fuzzy search using location services.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-10-21T20:20:21.000Z",
+    "updatedAt": "2026-10-21T20:20:21.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-15bf0157-4577-40e6-a788-85a1a6d8da44"
+  },
   "item": [
     {
-      "id": "3a34598b-f2c1-43cf-a0d8-9ebf2006f6ea",
-      "name": "Search",
-      "description": {
-        "content": "",
-        "type": "text/plain"
-      },
+      "name": "search",
       "item": [
         {
-          "id": "1eb4c744-4db5-4d45-b633-7093b20ead89",
-          "name": "Maps POI search",
-          "request": {
-            "name": "Maps POI search",
-            "description": {
-              "content": "Searches points of interest by category.",
-              "type": "text/plain"
-            },
-            "url": {
-              "path": [
-                "search",
-                "poi",
-                ":format"
-              ],
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "query": [
-                {
-                  "disabled": false,
-                  "key": "api-version",
-                  "value": "<string>",
-                  "description": "(Required) "
-                },
-                {
-                  "disabled": false,
-                  "key": "query",
-                  "value": "<string>",
-                  "description": "(Required) "
-                }
-              ],
-              "variable": [
-                {
-                  "disabled": false,
-                  "type": "any",
-                  "value": "<string>",
-                  "key": "format",
-                  "description": "(Required) "
-                }
-              ]
-            },
-            "header": [
-              {
-                "key": "Accept",
-                "value": "application/json"
-              }
-            ],
-            "method": "GET",
-            "auth": null
-          },
-          "response": [
+          "name": "poi",
+          "item": [
             {
-              "id": "aef50fad-103d-410c-b601-f47f6987c32a",
-              "name": "POI results",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "search",
-                    "poi",
-                    ":format"
-                  ],
-                  "host": [
-                    "{{baseUrl}}"
-                  ],
-                  "query": [
-                    {
-                      "key": "api-version",
-                      "value": "<string>"
-                    },
-                    {
-                      "key": "query",
-                      "value": "<string>"
-                    },
-                    {
-                      "key": "subscription-key",
-                      "value": "<API Key>"
-                    }
-                  ],
-                  "variable": [
-                    {
-                      "disabled": false,
-                      "type": "any",
-                      "value": "<string>",
-                      "key": "format",
-                      "description": "(Required) "
-                    }
-                  ]
-                },
-                "header": [
-                  {
-                    "key": "Accept",
-                    "value": "application/json"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "OK",
-              "code": 200,
-              "header": [
+              "name": "{format}",
+              "item": [
                 {
-                  "key": "Content-Type",
-                  "value": "application/json"
+                  "name": "Maps POI search",
+                  "id": "513ae045-094a-4f8b-8587-fe33885e5d5f",
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  },
+                  "request": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "application/json"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/search/poi/:format?api-version=<string>&query=<string>",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "search",
+                        "poi",
+                        ":format"
+                      ],
+                      "query": [
+                        {
+                          "description": "(Required) ",
+                          "key": "api-version",
+                          "value": "<string>"
+                        },
+                        {
+                          "description": "(Required) ",
+                          "key": "query",
+                          "value": "<string>"
+                        }
+                      ],
+                      "variable": [
+                        {
+                          "id": "6eedd27f-3281-4158-93aa-589f87d7ca2d",
+                          "key": "format",
+                          "value": "<string>",
+                          "description": "(Required) "
+                        }
+                      ]
+                    },
+                    "description": "Searches points of interest by category."
+                  },
+                  "response": [
+                    {
+                      "id": "d61847d5-1805-4af9-8c84-fd05a0085cf2",
+                      "name": "POI results",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "application/json"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/search/poi/:format?api-version=<string>&query=<string>&subscription-key=<API Key>",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "search",
+                            "poi",
+                            ":format"
+                          ],
+                          "query": [
+                            {
+                              "description": "(Required) ",
+                              "key": "api-version",
+                              "value": "<string>"
+                            },
+                            {
+                              "description": "(Required) ",
+                              "key": "query",
+                              "value": "<string>"
+                            },
+                            {
+                              "description": "Added as a part of security scheme: apikey",
+                              "key": "subscription-key",
+                              "value": "<API Key>"
+                            }
+                          ],
+                          "variable": [
+                            {
+                              "key": "format"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        }
+                      ],
+                      "cookie": [],
+                      "responseTime": null,
+                      "body": "{}",
+                      "createdAt": "2026-10-21T20:20:21.000Z",
+                      "updatedAt": "2026-10-21T20:20:21.000Z",
+                      "uid": "35240-d61847d5-1805-4af9-8c84-fd05a0085cf2"
+                    }
+                  ],
+                  "createdAt": "2026-10-21T20:20:21.000Z",
+                  "updatedAt": "2026-10-21T20:20:21.000Z",
+                  "uid": "35240-513ae045-094a-4f8b-8587-fe33885e5d5f"
                 }
               ],
-              "body": "{}",
-              "cookie": [],
-              "_postman_previewlanguage": "json"
+              "id": "e434e101-7711-4c4e-a63e-c8e2c5de7248",
+              "createdAt": "2026-10-21T20:20:21.000Z",
+              "updatedAt": "2026-10-21T20:20:21.000Z",
+              "uid": "35240-e434e101-7711-4c4e-a63e-c8e2c5de7248"
             }
           ],
-          "event": [],
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          }
+          "id": "782a4016-1250-43bb-acdc-7aa2486783db",
+          "createdAt": "2026-10-21T20:20:21.000Z",
+          "updatedAt": "2026-10-21T20:20:21.000Z",
+          "uid": "35240-782a4016-1250-43bb-acdc-7aa2486783db"
         },
         {
-          "id": "b2f699b2-f3f3-4cb4-ab96-8d65a13fb762",
-          "name": "Maps Fuzzy search",
-          "request": {
-            "name": "Maps Fuzzy search",
-            "description": {
-              "content": "Fuzzy search supporting POIs, addresses, and geographies.",
-              "type": "text/plain"
-            },
-            "url": {
-              "path": [
-                "search",
-                "fuzzy",
-                ":format"
-              ],
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "query": [
-                {
-                  "disabled": false,
-                  "key": "api-version",
-                  "value": "<string>",
-                  "description": "(Required) "
-                },
-                {
-                  "disabled": false,
-                  "key": "query",
-                  "value": "<string>",
-                  "description": "(Required) "
-                }
-              ],
-              "variable": [
-                {
-                  "disabled": false,
-                  "type": "any",
-                  "value": "<string>",
-                  "key": "format",
-                  "description": "(Required) "
-                }
-              ]
-            },
-            "header": [
-              {
-                "key": "Accept",
-                "value": "application/json"
-              }
-            ],
-            "method": "GET",
-            "auth": null
-          },
-          "response": [
+          "name": "fuzzy",
+          "item": [
             {
-              "id": "e5dd3850-9604-419e-b671-fee56b5c3938",
-              "name": "Fuzzy results",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "search",
-                    "fuzzy",
-                    ":format"
-                  ],
-                  "host": [
-                    "{{baseUrl}}"
-                  ],
-                  "query": [
-                    {
-                      "key": "api-version",
-                      "value": "<string>"
-                    },
-                    {
-                      "key": "query",
-                      "value": "<string>"
-                    },
-                    {
-                      "key": "subscription-key",
-                      "value": "<API Key>"
-                    }
-                  ],
-                  "variable": [
-                    {
-                      "disabled": false,
-                      "type": "any",
-                      "value": "<string>",
-                      "key": "format",
-                      "description": "(Required) "
-                    }
-                  ]
-                },
-                "header": [
-                  {
-                    "key": "Accept",
-                    "value": "application/json"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "OK",
-              "code": 200,
-              "header": [
+              "name": "{format}",
+              "item": [
                 {
-                  "key": "Content-Type",
-                  "value": "application/json"
+                  "name": "Maps Fuzzy search",
+                  "id": "54b76c24-e22f-4aeb-b209-a0745fc2fbe2",
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  },
+                  "request": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "application/json"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/search/fuzzy/:format?api-version=<string>&query=<string>",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "search",
+                        "fuzzy",
+                        ":format"
+                      ],
+                      "query": [
+                        {
+                          "description": "(Required) ",
+                          "key": "api-version",
+                          "value": "<string>"
+                        },
+                        {
+                          "description": "(Required) ",
+                          "key": "query",
+                          "value": "<string>"
+                        }
+                      ],
+                      "variable": [
+                        {
+                          "id": "a9ff3655-2e84-4c41-b92f-1b5d4edaa7f4",
+                          "key": "format",
+                          "value": "<string>",
+                          "description": "(Required) "
+                        }
+                      ]
+                    },
+                    "description": "Fuzzy search supporting POIs, addresses, and geographies."
+                  },
+                  "response": [
+                    {
+                      "id": "8a68e643-6817-44fd-8814-1730754f7431",
+                      "name": "Fuzzy results",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "application/json"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/search/fuzzy/:format?api-version=<string>&query=<string>&subscription-key=<API Key>",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "search",
+                            "fuzzy",
+                            ":format"
+                          ],
+                          "query": [
+                            {
+                              "description": "(Required) ",
+                              "key": "api-version",
+                              "value": "<string>"
+                            },
+                            {
+                              "description": "(Required) ",
+                              "key": "query",
+                              "value": "<string>"
+                            },
+                            {
+                              "description": "Added as a part of security scheme: apikey",
+                              "key": "subscription-key",
+                              "value": "<API Key>"
+                            }
+                          ],
+                          "variable": [
+                            {
+                              "key": "format"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        }
+                      ],
+                      "cookie": [],
+                      "responseTime": null,
+                      "body": "{}",
+                      "createdAt": "2026-10-21T20:20:21.000Z",
+                      "updatedAt": "2026-10-21T20:20:21.000Z",
+                      "uid": "35240-8a68e643-6817-44fd-8814-1730754f7431"
+                    }
+                  ],
+                  "createdAt": "2026-10-21T20:20:21.000Z",
+                  "updatedAt": "2026-10-21T20:20:21.000Z",
+                  "uid": "35240-54b76c24-e22f-4aeb-b209-a0745fc2fbe2"
                 }
               ],
-              "body": "{}",
-              "cookie": [],
-              "_postman_previewlanguage": "json"
+              "id": "42a88791-5a6e-4ff3-979e-bd9d2b4176aa",
+              "createdAt": "2026-10-21T20:20:21.000Z",
+              "updatedAt": "2026-10-21T20:20:21.000Z",
+              "uid": "35240-42a88791-5a6e-4ff3-979e-bd9d2b4176aa"
             }
           ],
-          "event": [],
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          }
+          "id": "16e08f2b-1e9f-486f-b1d7-303cdd958fdf",
+          "createdAt": "2026-10-21T20:20:21.000Z",
+          "updatedAt": "2026-10-21T20:20:21.000Z",
+          "uid": "35240-16e08f2b-1e9f-486f-b1d7-303cdd958fdf"
         }
       ],
-      "event": []
-    }
-  ],
-  "event": [],
-  "variable": [
-    {
-      "type": "string",
-      "value": "https://atlas.microsoft.com",
-      "key": "baseUrl"
+      "id": "7ae035ab-916e-468d-8b33-55270fe5f66b",
+      "createdAt": "2026-10-21T20:20:21.000Z",
+      "updatedAt": "2026-10-21T20:20:21.000Z",
+      "uid": "35240-7ae035ab-916e-468d-8b33-55270fe5f66b"
     }
   ],
   "auth": {
@@ -257,25 +289,25 @@
     "apikey": [
       {
         "key": "key",
-        "value": "subscription-key"
+        "value": "subscription-key",
+        "type": "string"
       },
       {
         "key": "value",
-        "value": "{{apiKey}}"
+        "value": "{{apiKey}}",
+        "type": "string"
       },
       {
         "key": "in",
-        "value": "query"
+        "value": "query",
+        "type": "string"
       }
     ]
   },
-  "info": {
-    "_postman_id": "07e4d885-7a29-4e49-97ce-f49c685e3a4f",
-    "name": "Azure Maps REST Geocoding Search API",
-    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-    "description": {
-      "content": "Azure Maps Search REST API provides geocoding, reverse geocoding, point of interest search, address search, and fuzzy search using location services.",
-      "type": "text/plain"
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://atlas.microsoft.com"
     }
-  }
+  ]
 }
