@@ -1,4 +1,4 @@
-# Azure Maps (microsoft-azure-maps)
+# Azure Maps
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,259 +66,142 @@
 
 Azure Maps provides geospatial APIs for maps, routing, geocoding, traffic, weather, and spatial analysis. The service offers a comprehensive suite of REST APIs to embed location intelligence into applications spanning mobile, web, and IoT scenarios across multiple transport modes.
 
-**APIs.json:** [https://azure.microsoft.com/en-us/services/azure-maps/](https://azure.microsoft.com/en-us/services/azure-maps/)
+**Areas:** Geocoding · Geospatial · Location · Maps · Mobility · Routing · Traffic · Weather
 
-## Tags
+## Azure Maps on APIs.io
 
-- Geocoding
-- Geospatial
-- Location
-- Maps
-- Mobility
-- Routing
-- Traffic
-- Weather
+Everything profiled for Azure Maps is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/microsoft-azure-maps/](https://apis.io/providers/microsoft-azure-maps/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### APIs (11)
 
-- **Created:** 2026-03-13
-- **Modified:** 2026-05-19
+- [Azure Maps Route API](https://apis.io/apis/microsoft-azure-maps/azure-maps-route-api/) — Calculates routes between origin and destination, provides turn-by-turn directions, supports multiple travel modes, traffic-aware routing, route matrices,…
+- [Azure Maps Render API](https://apis.io/apis/microsoft-azure-maps/azure-maps-render-api/) — Returns map tiles, static images, and vector tiles in multiple styles including satellite, road, and hybrid. Supports raster and vector tile formats, custom…
+- [Azure Maps Traffic API](https://apis.io/apis/microsoft-azure-maps/azure-maps-traffic-api/) — Provides real-time and historical traffic data including traffic flow, incident reports, and traffic tile imagery. Useful for routing, fleet management, and…
+- [Azure Maps Weather API](https://apis.io/apis/microsoft-azure-maps/azure-maps-weather-api/) — Provides current weather conditions, hourly and daily forecasts, severe weather alerts, weather along a route, and historical weather. Powered by…
+- [Azure Maps Timezone API](https://apis.io/apis/microsoft-azure-maps/azure-maps-timezone-api/) — Returns time zone information for a given coordinate, IANA time zone ID, or Windows time zone ID. Includes current time, daylight saving offsets, and time…
+- [Azure Maps Geolocation API](https://apis.io/apis/microsoft-azure-maps/azure-maps-geolocation-api/) — Returns the ISO country code for a supplied IP address, useful for content localization, regulatory compliance, and access control based on user geographic…
+- [Azure Maps Spatial API](https://apis.io/apis/microsoft-azure-maps/azure-maps-spatial-api/) — Performs spatial computations such as distance, closest point, point in polygon, geofence evaluation, and great circle distance. Enables location analytics…
+- [Azure Maps Elevation API](https://apis.io/apis/microsoft-azure-maps/azure-maps-elevation-api/) — Returns elevation data in meters above sea level for points, polylines, and bounding boxes. Useful for terrain analysis, topographic visualization, and…
+- [Azure Maps Creator API](https://apis.io/apis/microsoft-azure-maps/azure-maps-creator-api/) — Indoor maps service for creating, managing, and rendering custom indoor maps. Supports drawing package conversion, dataset and tileset management, feature…
+- [Azure Maps Geocoding API](https://apis.io/apis/microsoft-azure-maps/microsoft-azure-maps-geocoding-api/) — The Geocoding API from Azure Maps — 2 operation(s) for geocoding.
+- [Azure Maps Search API](https://apis.io/apis/microsoft-azure-maps/microsoft-azure-maps-search-api/) — The Search API from Azure Maps — 2 operation(s) for search.
 
-## APIs
+### Published properties
 
-### Azure Maps Search API
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-Provides geocoding, reverse geocoding, address parsing, point of interest search, and structured search. Returns candidate matches ranked by relevance for free-form, structured, and POI queries with worldwide coverage.
+#### Agentic access (1)
 
-- **Human URL:** [https://learn.microsoft.com/en-us/rest/api/maps/search](https://learn.microsoft.com/en-us/rest/api/maps/search)
-- **Base URL:** `https://atlas.microsoft.com`
+Which operations an agent can call, which act, and which need a human in the loop.
 
-#### Tags
+- [Microsoft Azure Maps Agentic Access](https://apis.io/agentic-access/microsoft-azure-maps/microsoft-azure-maps-agentic-access/)
 
-- Address
-- Geocoding
-- POI
-- Reverse Geocoding
-- Search
+#### Collections (3)
 
-#### Properties
+Postman and Open Collection request collections.
 
-- [OpenAPI](openapi/microsoft-azure-maps-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/microsoft-azure-maps.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/microsoft-azure-maps.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-- [Documentation](https://learn.microsoft.com/en-us/rest/api/maps/search)
-- [Authentication](https://learn.microsoft.com/en-us/azure/azure-maps/azure-maps-authentication)
-- [Getting Started](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-use-search-service)
+- [Azure Maps Search REST API](https://apis.io/collections/microsoft-azure-maps/open-microsoft-azure-maps/)
+- [Azure Maps Search REST Geocoding API](https://apis.io/collections/microsoft-azure-maps/open-microsoft-azure-maps-geocoding-api/)
+- [Azure Maps REST Geocoding Search API](https://apis.io/collections/microsoft-azure-maps/open-microsoft-azure-maps-search-api/)
 
-### Azure Maps Route API
+#### Security (2)
 
-Calculates routes between origin and destination, provides turn-by-turn directions, supports multiple travel modes, traffic-aware routing, route matrices, and route range (isochrone) calculations.
+Authentication, trust centre, and vulnerability disclosure.
 
-- **Human URL:** [https://learn.microsoft.com/en-us/rest/api/maps/route](https://learn.microsoft.com/en-us/rest/api/maps/route)
-- **Base URL:** `https://atlas.microsoft.com`
+- [Microsoft Azure Maps Authentication](https://apis.io/security/microsoft-azure-maps/microsoft-azure-maps-authentication/)
+- [Microsoft Azure Maps Domain Security](https://apis.io/security/microsoft-azure-maps/microsoft-azure-maps-domain-security/)
 
-#### Tags
+#### OAuth scopes (1)
 
-- Directions
-- Isochrone
-- Routing
-- Traffic-Aware
-- Travel Modes
+The permissions the API asks for.
 
-#### Properties
+- [Microsoft Azure Maps Scopes](https://apis.io/scopes/microsoft-azure-maps/microsoft-azure-maps-scopes/)
 
-- [Documentation](https://learn.microsoft.com/en-us/rest/api/maps/route)
-- [Getting Started](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-use-best-practices-for-routing)
-- [Postman Collection](collections/microsoft-azure-maps.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/microsoft-azure-maps.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+#### Plans and pricing (1)
 
-### Azure Maps Render API
+Published plans, tiers and prices.
 
-Returns map tiles, static images, and vector tiles in multiple styles including satellite, road, and hybrid. Supports raster and vector tile formats, custom imagery, and traffic overlays for embedding maps into applications.
+- [Microsoft Azure Maps Plans Pricing](https://apis.io/plans/microsoft-azure-maps/microsoft-azure-maps-plans-pricing/)
 
-- **Human URL:** [https://learn.microsoft.com/en-us/rest/api/maps/render](https://learn.microsoft.com/en-us/rest/api/maps/render)
-- **Base URL:** `https://atlas.microsoft.com`
+#### Rate limits (1)
 
-#### Tags
+Published request limits.
 
-- Map Tiles
-- Raster
-- Render
-- Static Images
-- Vector Tiles
+- [Microsoft Azure Maps Rate Limits](https://apis.io/rate-limits/microsoft-azure-maps/microsoft-azure-maps-rate-limits/)
 
-#### Properties
+#### FinOps (1)
 
-- [Documentation](https://learn.microsoft.com/en-us/rest/api/maps/render)
-- [Reference](https://learn.microsoft.com/en-us/azure/azure-maps/zoom-levels-and-tile-grid)
-- [Postman Collection](collections/microsoft-azure-maps.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/microsoft-azure-maps.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+What the API costs to run, by operation.
 
-### Azure Maps Traffic API
+- [Microsoft Azure Maps Finops](https://apis.io/finops/microsoft-azure-maps/microsoft-azure-maps-finops/)
 
-Provides real-time and historical traffic data including traffic flow, incident reports, and traffic tile imagery. Useful for routing, fleet management, and applications requiring up-to-date road conditions.
+## Where to find this API
 
-- **Human URL:** [https://learn.microsoft.com/en-us/rest/api/maps/traffic](https://learn.microsoft.com/en-us/rest/api/maps/traffic)
-- **Base URL:** `https://atlas.microsoft.com`
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-#### Tags
-
-- Flow
-- Incidents
-- Real-Time
-- Traffic
-
-#### Properties
-
-- [Documentation](https://learn.microsoft.com/en-us/rest/api/maps/traffic)
-- [Reference](https://learn.microsoft.com/en-us/azure/azure-maps/traffic-coverage)
-- [Postman Collection](collections/microsoft-azure-maps.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/microsoft-azure-maps.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Azure Maps Weather API
-
-Provides current weather conditions, hourly and daily forecasts, severe weather alerts, weather along a route, and historical weather. Powered by AccuWeather data and global coverage.
-
-- **Human URL:** [https://learn.microsoft.com/en-us/rest/api/maps/weather](https://learn.microsoft.com/en-us/rest/api/maps/weather)
-- **Base URL:** `https://atlas.microsoft.com`
-
-#### Tags
-
-- Alerts
-- Forecast
-- Historical
-- Weather
-
-#### Properties
-
-- [Documentation](https://learn.microsoft.com/en-us/rest/api/maps/weather)
-- [Reference](https://learn.microsoft.com/en-us/azure/azure-maps/weather-coverage)
-- [Postman Collection](collections/microsoft-azure-maps.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/microsoft-azure-maps.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Azure Maps Timezone API
-
-Returns time zone information for a given coordinate, IANA time zone ID, or Windows time zone ID. Includes current time, daylight saving offsets, and time zone metadata.
-
-- **Human URL:** [https://learn.microsoft.com/en-us/rest/api/maps/timezone](https://learn.microsoft.com/en-us/rest/api/maps/timezone)
-- **Base URL:** `https://atlas.microsoft.com`
-
-#### Tags
-
-- DST
-- IANA
-- Time Zone
-- UTC Offset
-
-#### Properties
-
-- [Documentation](https://learn.microsoft.com/en-us/rest/api/maps/timezone)
-- [Postman Collection](collections/microsoft-azure-maps.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/microsoft-azure-maps.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Azure Maps Geolocation API
-
-Returns the ISO country code for a supplied IP address, useful for content localization, regulatory compliance, and access control based on user geographic location.
-
-- **Human URL:** [https://learn.microsoft.com/en-us/rest/api/maps/geolocation](https://learn.microsoft.com/en-us/rest/api/maps/geolocation)
-- **Base URL:** `https://atlas.microsoft.com`
-
-#### Tags
-
-- Country Code
-- Geolocation
-- IP Address
-- Localization
-
-#### Properties
-
-- [Documentation](https://learn.microsoft.com/en-us/rest/api/maps/geolocation)
-- [Postman Collection](collections/microsoft-azure-maps.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/microsoft-azure-maps.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Azure Maps Spatial API
-
-Performs spatial computations such as distance, closest point, point in polygon, geofence evaluation, and great circle distance. Enables location analytics and spatial reasoning workloads.
-
-- **Human URL:** [https://learn.microsoft.com/en-us/rest/api/maps/spatial](https://learn.microsoft.com/en-us/rest/api/maps/spatial)
-- **Base URL:** `https://atlas.microsoft.com`
-
-#### Tags
-
-- Geofencing
-- Point in Polygon
-- Spatial Analysis
-- Spatial Operations
-
-#### Properties
-
-- [Documentation](https://learn.microsoft.com/en-us/rest/api/maps/spatial)
-- [Reference](https://learn.microsoft.com/en-us/azure/azure-maps/geofence-geojson)
-- [Postman Collection](collections/microsoft-azure-maps.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/microsoft-azure-maps.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Azure Maps Elevation API
-
-Returns elevation data in meters above sea level for points, polylines, and bounding boxes. Useful for terrain analysis, topographic visualization, and elevation profile calculations along a route.
-
-- **Human URL:** [https://learn.microsoft.com/en-us/rest/api/maps/elevation](https://learn.microsoft.com/en-us/rest/api/maps/elevation)
-- **Base URL:** `https://atlas.microsoft.com`
-
-#### Tags
-
-- DEM
-- Elevation
-- Terrain
-- Topography
-
-#### Properties
-
-- [Documentation](https://learn.microsoft.com/en-us/rest/api/maps/elevation)
-- [Postman Collection](collections/microsoft-azure-maps.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/microsoft-azure-maps.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Azure Maps Creator API
-
-Indoor maps service for creating, managing, and rendering custom indoor maps. Supports drawing package conversion, dataset and tileset management, feature state, and wayfinding for indoor environments.
-
-- **Human URL:** [https://learn.microsoft.com/en-us/rest/api/maps/creator](https://learn.microsoft.com/en-us/rest/api/maps/creator)
-- **Base URL:** `https://atlas.microsoft.com`
-
-#### Tags
-
-- Creator
-- Indoor Maps
-- Tileset
-- Wayfinding
-
-#### Properties
-
-- [Documentation](https://learn.microsoft.com/en-us/rest/api/maps/creator)
-- [Getting Started](https://learn.microsoft.com/en-us/azure/azure-maps/creator-indoor-maps)
-- [Postman Collection](collections/microsoft-azure-maps.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/microsoft-azure-maps.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-## Common Properties
-
-- [Portal](https://portal.azure.com)
-- [Documentation](https://learn.microsoft.com/en-us/azure/azure-maps/)
-- [Getting Started](https://learn.microsoft.com/en-us/azure/azure-maps/quick-demo-map-app)
-- [Authentication](https://learn.microsoft.com/en-us/azure/azure-maps/azure-maps-authentication)
-- [S D Ks](https://learn.microsoft.com/en-us/azure/azure-maps/about-azure-maps)
-- [Pricing](https://azure.microsoft.com/en-us/pricing/details/azure-maps/)
-- [Status Page](https://status.azure.com/)
-- [Support](https://azure.microsoft.com/en-us/support/options/)
-- [Blog](https://azure.microsoft.com/en-us/blog/tag/azure-maps/)
-- [Changelog](https://learn.microsoft.com/en-us/azure/azure-maps/release-notes-map-control)
-- [Terms of Service](https://azure.microsoft.com/en-us/support/legal/)
-- [Privacy Policy](https://privacy.microsoft.com/en-us/privacystatement)
-- [GitHub Organization](https://github.com/Azure)
 - [Website](https://azure.microsoft.com/en-us/products/azure-maps)
-- [Login](https://portal.azure.com)
-- [Sign Up](https://azure.microsoft.com/en-us/free)
-- [L L Ms Txt](https://portal.azure.com/llms.txt)
+- [Documentation](https://learn.microsoft.com/en-us/azure/azure-maps/)
+- [Getting started](https://learn.microsoft.com/en-us/azure/azure-maps/quick-demo-map-app)
+- [Pricing](https://azure.microsoft.com/en-us/pricing/details/azure-maps/)
+- [Support](https://azure.microsoft.com/en-us/support/options/)
+- [Changelog](https://learn.microsoft.com/en-us/azure/azure-maps/release-notes-map-control)
+- [Blog](https://azure.microsoft.com/en-us/blog/tag/azure-maps/)
+- [Terms of service](https://azure.microsoft.com/en-us/support/legal/)
+- [Privacy policy](https://privacy.microsoft.com/en-us/privacystatement)
+- [GitHub](https://github.com/Azure)
+- [Status](https://status.azure.com/)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 49.9** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 85.7 |
+| Contract quality | 42.2 |
+| Contract governance | 0.0 |
+| Operational transparency | 42.1 |
+| Developer ergonomics | 63.1 |
+| Access clarity | 52.6 |
+
+**Agent readiness 22.7** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | na |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | na |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | na |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | distinct |
+
+**Regulatory alignment 29.4** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/microsoft-azure-maps/](https://apis.io/providers/microsoft-azure-maps/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Azure Maps: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/microsoft-azure-maps/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
